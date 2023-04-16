@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Shikimori x Lib Search
-// @version      1.5
+// @version      1.6
 // @description  Поиска на сайтах семейства Lib.
 // @author       hayward
 // @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
