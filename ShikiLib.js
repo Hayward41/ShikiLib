@@ -69,7 +69,13 @@ function start(){
 				if (!$(".AnimeSearch").length) {
 					let name = $('.head > h1').text().split("/")[1];
 					$(".watch-online-placeholer").append(
-					"<div class='block mangalib'><a target=_blank href='https://mangalib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на mangalib</a></div>"
+					"<div class='block mangalib'><a target=_blank href='https://mangalib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на MangaLib</a></div>"
+                    );
+                    $(".watch-online-placeholer").append(
+					"<div class='block hentailib'><a target=_blank href='https://v1.hentailib.org/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на HentaiLib</a></div>"
+                    )
+                    $(".watch-online-placeholer").append(
+					"<div class='block slashlib'><a target=_blank href='https://v1.slashlib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на SlashLib</a></div>"
                     );
 
 				}
