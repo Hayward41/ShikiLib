@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Shikimori x Lib Search
-// @version      1.6
+// @version      1.7
 // @description  Поиска на сайтах семейства Lib.
 // @author       hayward
 // @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
@@ -23,11 +23,14 @@ function start(){
 
 			if (!$(".watch_link").length) {
 				if (!$(".AnimeSearch").length) {
-					let name = $('.head > h1').text().split("/")[1];
+					let name = $('.head > h1').text().split("/ ")[1];
 					$(".watch-online-placeholer").append(
 					"<div class='block animelib'><a target=_blank href='https://animelib.me/anime-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на AnimeLib</a></div>"
                     );
 
+					$(".watch-online-placeholer").append(
+					"<div class='block darklibria'><a target=_blank href='https://darklibria.it/search?find=" + name + "' class='b-link_button dark watch_link '>Поиск на DarkLibria</a></div>"
+					);
 				}
 			}
 		}, 200);
