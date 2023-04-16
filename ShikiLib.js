@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Shikimori Search
-// @version      1.4
-// @description  Поиска на animelib.
+// @name         Shikimori x Lib Search
+// @version      1.5
+// @description  Поиска на сайтах семейства Lib.
 // @author       hayward
 // @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
 // @downloadURL  https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
@@ -26,6 +26,50 @@ function start(){
 					let name = $('.head > h1').text().split("/")[1];
 					$(".watch-online-placeholer").append(
 					"<div class='block animelib'><a target=_blank href='https://animelib.me/anime-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на AnimeLib</a></div>"
+                    );
+
+				}
+			}
+		}, 200);
+	}
+
+	if (window.location.href.indexOf("https://shikimori.me/ranobe/") !== -1) {
+		setTimeout(function () {
+			if (!$(".watch-online-placeholer").length) {
+				$(".c-info-right").append("<div class='watch-online-placeholer'></div>");
+			}
+
+			if ($(".watch-online-placeholer .block:last-child")) {
+				$(".watch-online-placeholer .block:last-child").remove();
+			}
+
+			if (!$(".watch_link").length) {
+				if (!$(".AnimeSearch").length) {
+					let name = $('.head > h1').text().split("/")[1];
+					$(".watch-online-placeholer").append(
+					"<div class='block ranobelib'><a target=_blank href='https://ranobelib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на ranobelib</a></div>"
+                    );
+
+				}
+			}
+		}, 200);
+	}
+
+	if (window.location.href.indexOf("https://shikimori.me/mangas/") !== -1) {
+		setTimeout(function () {
+			if (!$(".watch-online-placeholer").length) {
+				$(".c-info-right").append("<div class='watch-online-placeholer'></div>");
+			}
+
+			if ($(".watch-online-placeholer .block:last-child")) {
+				$(".watch-online-placeholer .block:last-child").remove();
+			}
+
+			if (!$(".watch_link").length) {
+				if (!$(".AnimeSearch").length) {
+					let name = $('.head > h1').text().split("/")[1];
+					$(".watch-online-placeholer").append(
+					"<div class='block mangalib'><a target=_blank href='https://mangalib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на mangalib</a></div>"
                     );
 
 				}
