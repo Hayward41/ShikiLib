@@ -48,7 +48,7 @@ function start(){
 
 			if (!$(".watch_link").length) {
 				if (!$(".AnimeSearch").length) {
-					let name = $('.head > h1').text().split("/")[1];
+					let name = $('.head > h1').text().split("/ ")[1];
 					$(".watch-online-placeholer").append(
 					"<div class='block ranobelib'><a target=_blank href='https://ranobelib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на ranobelib</a></div>"
                     );
@@ -70,7 +70,10 @@ function start(){
 
 			if (!$(".watch_link").length) {
 				if (!$(".AnimeSearch").length) {
-					let name = $('.head > h1').text().split("/")[1];
+					let name = $('.head > h1').text().split("/ ")[1];
+					$(".watch-online-placeholer").append(
+					"<div class='block remanga'><a target=_blank href='https://remanga.org/search?query=" + name + "' class='b-link_button dark watch_link '>Поиск на ReManga</a></div>"
+					);
 					$(".watch-online-placeholer").append(
 					"<div class='block mangalib'><a target=_blank href='https://mangalib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на MangaLib</a></div>"
                     );
@@ -80,7 +83,6 @@ function start(){
                     $(".watch-online-placeholer").append(
 					"<div class='block slashlib'><a target=_blank href='https://v1.slashlib.me/manga-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на SlashLib</a></div>"
                     );
-
 				}
 			}
 		}, 200);
