@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Shikimori x Lib Search
-// @version      1.7
-// @description  Поиска на сайтах семейства Lib.
+// @name         Shikimori x Lib and others
+// @version      1.8
+// @description  Поиск аниме.
 // @author       hayward
 // @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
 // @downloadURL  https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
@@ -27,9 +27,17 @@ function start(){
 					$(".watch-online-placeholer").append(
 					"<div class='block animelib'><a target=_blank href='https://animelib.me/anime-list?name=" + name + "' class='b-link_button dark watch_link '>Поиск на AnimeLib</a></div>"
                     );
-
 					$(".watch-online-placeholer").append(
 					"<div class='block darklibria'><a target=_blank href='https://darklibria.it/search?find=" + name + "' class='b-link_button dark watch_link '>Поиск на DarkLibria</a></div>"
+					);
+					$(".watch-online-placeholer").append(
+					"<div class='block korsars'><a target=_blank href='http://korsars.pro/tracker.php?f[]=277&f[]=278&f[]=46&f[]=95&f[]=273&f[]=301&nm=" + name + "' class='b-link_button dark watch_link '>Поиск на korsars.pro</a></div>"
+					);
+					$(".watch-online-placeholer").append(
+					"<div class='block nnmclub'><a target=_blank href='https://nnmclub.to/forum/tracker.php?f=620,621,622,623,624,625,626,627,628,632,634,635,638,644,646&nm=" + name + "' class='b-link_button dark watch_link '>Поиск на NNM-Club</a></div>"
+					);
+					$(".watch-online-placeholer").append(
+					"<div class='block rutracker'><a target=_blank href='https://rutracker.org/forum/tracker.php?f=1105,1106,1386,1387,1389,1390,1391,1642,2484,2491,2544,33,404,599,809,893&nm=" + name + "' class='b-link_button dark watch_link '>Поиск на RuTracker.org</a></div>"
 					);
 				}
 			}
