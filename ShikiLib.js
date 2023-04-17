@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Shikimori x Lib and others
-// @version      1.8
+// @version      1.8.2
 // @description  Поиска аниме.
 // @author       hayward
 // @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
