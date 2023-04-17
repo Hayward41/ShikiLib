@@ -32,6 +32,9 @@ function start(){
 					"<div class='block darklibria'><a target=_blank href='https://darklibria.it/search?find=" + name + "' class='b-link_button dark watch_link '>Поиск на DarkLibria</a></div>"
 					);
 					$(".watch-online-placeholer").append(
+					"<div class='block nyaasi'><a target=_blank href='https://nyaa.si/?f=0&c=1_0&q=" + name + "' class='b-link_button dark watch_link '>Поиск на Nyaa.si</a></div>"
+					);
+					$(".watch-online-placeholer").append(
 					"<div class='block korsars'><a target=_blank href='http://korsars.pro/tracker.php?f[]=277&f[]=278&f[]=46&f[]=95&f[]=273&f[]=301&nm=" + name + "' class='b-link_button dark watch_link '>Поиск на korsars.pro</a></div>"
 					);
 					$(".watch-online-placeholer").append(
