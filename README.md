@@ -1,3 +1,3 @@
 # ShikiLib
 Credits:
-https://github.com/i1fox/Shikimori_Search
+https://openuserjs.org/scripts/Chortowod/Shiki_New_Anime_Links_(RurackerMangaLibNyaaOther)
