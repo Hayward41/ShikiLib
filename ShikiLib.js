@@ -9,11 +9,11 @@
 // @license      MIT
 // @require      https://gist.githubusercontent.com/Chortowod/814b010c68fc97e5f900df47bf79059c/raw/chtw_settings.js
 // @copyright    2023, Chortowod, me
-// @downloadURL  https://github.com/Hayward41/ShikiLib/blob/main/ShikiLib.js
-// @updateURL    https://github.com/Hayward41/ShikiLib/blob/main/ShikiLib.js
+// @downloadURL  https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
+// @updateURL    https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js
 // ==/UserScript==
 
-let settings = new ChtwSettings('chtwNewLinks', '<a target="_blank" href="https://github.com/Hayward41/ShikiLib/blob/main/ShikiLib.js">Новые ссылки</a>');
+let settings = new ChtwSettings('chtwNewLinks', '<a target="_blank" href="https://raw.githubusercontent.com/Hayward41/ShikiLib/main/ShikiLib.js">Новые ссылки</a>');
 
 function initSettings() {
     settings.createOption('rutracker', 'Rutracker');
